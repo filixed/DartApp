@@ -1,6 +1,6 @@
 import React from 'react'
 
-  import { Navbar,Nav} from 'react-bootstrap'
+  import { Navbar,Nav, Button} from 'react-bootstrap'
 
 
 
@@ -15,9 +15,17 @@ const Navigation = () =>{
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="mr-auto">
-                                <Nav.Link href="/">Strona główna</Nav.Link>
+                                <Nav.Link href="/">Home</Nav.Link>
                                 
                                 </Nav>
+                                <Nav>
+                                    <div>
+                                        <Button variant="outline-success" >SIGN IN</Button>
+                                        {' '}                          
+                                        <Button variant="outline-danger" >SIGN UP</Button> 
+                                    </div>                                   
+                                </Nav>
+
                             </Navbar.Collapse>
                         </Navbar>
                 
