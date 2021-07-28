@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import Navbar from '../NavBar/Navigation'
 import Auxil from '../../hoc/Auxil/Auxil'
 

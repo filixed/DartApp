@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import CountPoints from './Containers/CountPoints/CountPoints'
 

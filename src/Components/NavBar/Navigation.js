@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-  import { Navbar,Nav, Button} from 'react-bootstrap'
+import { Navbar,Nav, Button} from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
+
 
 
 
 const Navigation = () =>{
+
+    let history = useHistory();
+
+    const loginRedirect = () => {
+        history.push('/login');
+    }
+
     return(
         <div>
             <div className="row">
@@ -20,7 +29,7 @@ const Navigation = () =>{
                                 </Nav>
                                 <Nav>
                                     <div>
-                                        <Button variant="outline-success" >SIGN IN</Button>
+                                        <Button onClick={loginRedirect} variant="outline-success" >SIGN IN</Button>
                                         {' '}                          
                                         <Button variant="outline-danger" >SIGN UP</Button> 
                                     </div>                                   
