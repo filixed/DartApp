@@ -62,7 +62,7 @@ const CountPoints = () => {
 
 
     return(
-        <Container >
+        <Container  >
            <ScoreButtons getScore={getScore} />
             <Row xs={4}>
               <Col></Col>
@@ -73,9 +73,16 @@ const CountPoints = () => {
               <Button onClick={(e) =>createRow(e)}>Dodaj</Button>
               <h1 style={{textAlign: 'center'}}>{count}</h1>
             </Row>
-            <Row xs={3}>
-              <h1 onClick={() => setFirstShot(0)} >{firstShot}</h1><h1 onClick={() => setSecondShot(0)} >{secondShot}</h1>
-              <h1 onClick={() => setThirShot(0)} >{thirdShot}</h1>
+            <Row className="justify-content-md-center">
+              <Col xs lg="2" align="center">
+                <h1 onClick={() => setFirstShot(0)} >{firstShot}</h1>
+              </Col>
+              <Col xs lg="2" align="center">
+                <h1 onClick={() => setSecondShot(0)} >{secondShot}</h1>
+              </Col>
+              <Col xs lg="2" align="center">
+                  <h1 onClick={() => setThirShot(0)} >{thirdShot}</h1>
+              </Col>
             </Row>
             <Row>
               <Tab >

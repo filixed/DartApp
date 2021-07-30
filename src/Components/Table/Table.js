@@ -1,10 +1,11 @@
 import React from 'react'
 
 import {Table} from 'react-bootstrap'
+import classes from './Table.module.css'
 
 const Tab = (props) =>{
   return(
-    <Table responsive striped bordered hover >
+    <Table className={classes.Tab} responsive striped bordered hover >
       <thead>
         <tr>
           <th>#</th>
