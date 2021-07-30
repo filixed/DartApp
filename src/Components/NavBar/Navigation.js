@@ -14,6 +14,10 @@ const Navigation = () =>{
         history.push('/login');
     }
 
+    const registerRedirect = () => {
+        history.push('/register');
+    }
+
     return(
         <div>
             <div className="row">
@@ -31,7 +35,7 @@ const Navigation = () =>{
                                     <div>
                                         <Button onClick={loginRedirect} variant="outline-success" >SIGN IN</Button>
                                         {' '}                          
-                                        <Button variant="outline-danger" >SIGN UP</Button> 
+                                        <Button onClick={registerRedirect} variant="outline-danger" >SIGN UP</Button> 
                                     </div>                                   
                                 </Nav>
 
