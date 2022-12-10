@@ -5,7 +5,7 @@ import classes from './Table.module.css'
 
 const Tab = (props) =>{
   return(
-    <Table className={classes.Tab} responsive striped bordered hover >
+    <Table className={classes.Tab} size="sm" responsive striped bordered hover >
       <thead>
         <tr>
           <th>#</th>

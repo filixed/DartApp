@@ -14,11 +14,11 @@ const ScoreButtons = (props) =>{
       }
 
     const createButtonsGroup = () => {
-        const array = [1,2,3,4,5]
+        const array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
         return array.map((number) => {
-          return  <ButtonGroup key={number} vertical style={{padding:'1px' }} >             
-                      { getButtonsUsingMap([number,number+5,number+10,number+15])}
+          return  <ButtonGroup size='sm' key={number} vertical style={{padding:'6px, 1px, 1px, 1px' }} >             
+                      { getButtonsUsingMap([number])}
                   </ButtonGroup>
         })
     }
@@ -27,7 +27,7 @@ const ScoreButtons = (props) =>{
 
     return(        
         <Container>
-            <Row xs={5}>            
+            <Row xs={2} md={4} lg={5}>          
             {createButtonsGroup()}
             </Row>
         </Container>
